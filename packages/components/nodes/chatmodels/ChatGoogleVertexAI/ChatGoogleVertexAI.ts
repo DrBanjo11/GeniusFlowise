@@ -46,6 +46,10 @@ class GoogleVertexAI_ChatModels implements INode {
                 name: 'modelName',
                 type: 'options',
                 options: [
+                     {
+                        label: 'gemini-pro',
+                        name: 'gemini-pro'
+                    },
                     {
                         label: 'chat-bison',
                         name: 'chat-bison'
