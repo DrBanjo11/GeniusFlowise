@@ -1865,8 +1865,8 @@ export async function start(): Promise<void> {
         cors: {
             origin: '*'
         },
-        pingInterval: 25 * 60 * 1000, // 25 minutes
-        pingTimeout: 5 * 60 * 1000, // 5 minutes, making total inactivity 
+        pingInterval: 5 * 60 * 1000, // 5 minutes
+        pingTimeout: 5000, // 5 seconds, making total inactivity 
     })
     
 
