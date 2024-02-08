@@ -1864,8 +1864,11 @@ export async function start(): Promise<void> {
     const io = new Server(server, {
         cors: {
             origin: '*'
-        }
+        },
+        pingInterval: 25 * 60 * 1000, // 25 minutes
+        pingTimeout: 5 * 60 * 1000, // 5 minutes, making total inactivity 
     })
+    
 
     await serverApp.initDatabase()
     await serverApp.config(io)
