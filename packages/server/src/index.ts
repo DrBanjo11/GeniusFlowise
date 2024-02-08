@@ -1866,7 +1866,7 @@ export async function start(): Promise<void> {
             origin: '*'
         },
         pingInterval: 5 * 60 * 1000, // 5 minutes
-        pingTimeout: 5000, // 5 seconds, making total inactivity 
+        pingTimeout: 20000, // 20 seconds, making total inactivity 
     })
     
 
